@@ -18,11 +18,11 @@ def roundm(n,m):
 
 def slope(p0,p1):
     try:
-        m = (p1[1] - p0[1]) / (p1[0] - p0[0])
+        # Slope function
+        return (p1[1] - p0[1]) / (p1[0] - p0[0])
     except ZeroDivisionError:        
-        m = 0
-    return m
-
+        return 0
+    
 def collide_rooms(left,right):
     '''
     Collide rooms, allow them to share edges

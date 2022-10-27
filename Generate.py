@@ -199,10 +199,10 @@ class Game(StateMachine):
 
         self.gridSpacing = gridSpacing
         self.framerate = frameRate
-        self.screen = pygame.display.set_mode((1024,1024),0,32)
+        self.screen = pygame.display.set_mode((1080,1024),0,32)
         pygame.display.set_caption('Procedural Dungeon Generation Demo')
         self.clock = pygame.time.Clock()
-        self.maxRooms = 100
+        self.maxRooms = 1000 # default value = 100
 
         self.add(InitializationMode(self))
         self.add(AddRoomsMode(self))
